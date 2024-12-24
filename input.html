@@ -11,6 +11,8 @@
 
     <!-- jS -->
     <script src="swiper.js" defer></script>
+    <script src="swiper.js" defer></script>
+    <script src="deep-network.js" defer></script>
     <script src="animation-lottie.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.10.1/lottie.min.js"></script>
 
@@ -66,7 +68,7 @@
 
 <main>
 
-    <div id="animation-overlay">
+    <!--<div id="animation-overlay">
         <div id="animation-container"></div>
     </div>
     <div class="filter-container">
@@ -98,7 +100,38 @@
                 <p class="deep-text"> Test neurone</p>
             </div>
         </div>
-    </div>
+    </div>-->
+    <canvas id=c></canvas>
+    <!--
+    ALGORITHM:
+
+    structure:
+    - gen( x,y,z ):
+        - create node at x,y,z // blue
+        - append some children to list:
+            - within a certain distance to parent
+            - outside a certain distance from any node
+            - within a global distance
+        - if no children
+            - don't append any
+            - set as end node // green-ish
+
+    - gen( 0,0,0 ) // red
+    - while list has items
+        - gen( position of first item )
+        - remove first item
+
+
+    impulse behaviour:
+    - pick( node ):
+        - if node is end node
+            - pick( original node )
+        - else
+            - pick( random node from node children )
+
+    - pick( original node)
+
+    -->
 </main>
 
 <footer>

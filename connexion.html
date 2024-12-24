@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <title>Bean | Connexion</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/custom.css">
+
+    <!-- jS -->
+    <script src="connexion.js" defer></script>
+    <script src="animation-lottie.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.10.1/lottie.min.js"></script>
+
+
+    <!-- Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+        <!-- Grotesk -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
+
+    <!-- Lemon Milk -->
+    <link href="https://fonts.cdnfonts.com/css/lemon-milk" rel="stylesheet">
+
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Bean" />
+    <link rel="manifest" href="assets/favicon/manifest.json" />
+
+</head>
+<body>
+
+<header>
+    <div class="header-container-log">
+        <div>
+            <h2 class="header-text">Bean</h2>
+        </div>
+    </div>
+</header>
+
+<main>
+
+    <div id="animation-overlay">
+        <div id="animation-container"></div>
+    </div>
+
+
+    <div class="container-form">
+        <h2 class="title-form-text">Connexion</h2>
+        <form action="index.html" name="" id="loginForm" method="post" class="form-example">
+            <div class="form-sculpt">
+                <div class="form-example">
+                    <input class="form-field" type="text" name="name" id="pseudo" placeholder="Pseudo"/>
+                </div>
+                <div class="form-example">
+                    <input class="form-field" type="password" name="password" id="password" placeholder="Mot de passe"/>
+                </div>
+                <div class="form-example">
+                     <input id="formBtn" class="connexion-btn" type="submit" value="Soumettre"/>
+                </div>
+            </div>
+        </form>
+        <div id="alert" class="alert">
+            <p class="alert-text">Formulaire incorrect</p>
+        </div>
+        <div class="text-link-connexion">
+            <p>Tu n'as pas de compte ?<a href="login.html"> Inscription</a></p>
+        </div>
+    </div>
+
+
+</main>
+
+
+</body>
+</html>

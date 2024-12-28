@@ -63,7 +63,7 @@ img.addEventListener("transitionend", () => {
     if (transform.includes("matrix")) {
         const scale = parseFloat(transform.split(", ")[0].replace("matrix(", ""));
         if (scale === 1.35) {
-            window.location.href = "input.html";
+            window.location.href = "deep-network.html";
         }
     }
 });
